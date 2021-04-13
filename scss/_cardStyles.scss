@@ -1,0 +1,148 @@
+.ctaJoin {
+    background: white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 20px;
+
+    h3 {
+        margin-top: 6px;
+        color: var(--Cyan);
+        font-weight: 700;
+        font-size: 23px;
+
+    }
+
+    .mnyBack{
+        color: var(--brightYellow);
+        font-size: 18px;
+        font-weight: 400;
+
+        @include breakpoints(laptop){
+          margin-bottom: 0;  
+        }
+    }
+
+    p {
+        color: var(--grayishBlue);
+        line-height: 29px;
+        font-weight: 300;
+
+        @include breakpoints(laptop){
+            margin-top: 7px;
+            padding-right: 16px;
+        }
+    }
+
+    @include breakpoints(laptop){
+        padding-left: 40px;
+    }
+}
+
+.ctaSub {
+    background: var(--Cyan);
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        color: white;
+        margin-top: 0;
+        font-weight: 400;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+
+        .dollar {
+            color: white;
+            font-size: 40px;
+            margin: 0 12px 0 0;
+        }
+
+        .per-month {
+            color: lightblue;
+            font-size: 16px;
+            font-weight: 300;
+            margin: 0;
+        }
+    }
+
+    .access{
+        margin: 7px 0 40px 0;
+        color: white;
+        font-weight: 300;
+    }
+
+    .button {
+        height: 50px;
+        width: 315px;
+        background: var(--brightYellow);
+        text-align: center;
+        align-self: center;
+        border-radius: 6px;
+        color: white;
+        font-weight: 400;
+        cursor: pointer;
+
+        @include breakpoints(laptop){
+            width: 230px;
+            align-self: flex-start;
+        }
+    }
+
+    @include breakpoints(tablet){
+        align-items: center;
+     }
+
+    @include breakpoints(laptop){
+        padding-left: 29px;
+        border-bottom-left-radius: 6px;
+    }
+
+}
+
+.whyUs {
+    background: var(--Cyanlight);
+    padding: 23px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    h3{
+        color: white;
+        margin-top: 0;
+        font-weight: 400;
+        margin-bottom: 26px;
+    }
+    
+    p {
+        font-size: 14px;
+        color: white;
+        font-weight: 300;
+        line-height: 8px;
+
+        @include breakpoints(laptop){
+            line-height: 9px;
+        }
+    }
+
+    @include breakpoints(tablet){
+        text-align: center;
+     }
+
+    @include breakpoints(laptop){
+        text-align: left;
+        padding-left: 29px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 6px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    color: var(--grayishBlue);
+    a{
+        text-decoration: none;
+        color: var(--grayishBlue);
+    }
+}

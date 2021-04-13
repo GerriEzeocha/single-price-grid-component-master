@@ -1,0 +1,40 @@
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --brightYellow: hsl(71, 73%, 54%);
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+    --Cyanlight: hsl(179, 84%, 40%);
+}
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 375px;
+    max-width: 1440px;
+    font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+    background: var(--lightGray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoints(phablet){
+        margin-top: 40px;
+    }
+
+    @include breakpoints(laptop){
+          height: 99vh;
+          overflow: hidden;
+    }
+
+    @include breakpoints(desktop){
+        height: 99vh;
+        overflow: hidden;
+  }
+}

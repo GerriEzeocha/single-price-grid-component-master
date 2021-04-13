@@ -1,0 +1,43 @@
+.mainContainer {
+    height: 802px;
+    width: 360px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "join"
+        "subscribe"
+        "whyus" 
+    ;
+    border-radius: 6px;
+    box-shadow: -1px 6px 20px var(--grayishBlue);
+
+    @include breakpoints(tablet){
+       height: 100%;
+       width: 530px;
+    }
+
+    @include breakpoints(laptop){
+        height: 475px;
+        width: 640px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "join join"
+            "subscribe whyus";
+    }
+
+
+
+    .ctaJoin {
+        grid-area: join;
+    }
+
+    .ctasub {
+        grid-area: subscribe;
+    }
+
+    .whyUs {
+        grid-area: whyus;
+    }
+}

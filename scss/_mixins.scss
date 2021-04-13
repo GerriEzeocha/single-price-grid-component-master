@@ -1,0 +1,17 @@
+$breakpoints: (
+    "desktop": "87.5em",
+    "laptop": "64em",
+    "tablet": "40em",
+    "phablet": "28em"
+);
+
+@mixin breakpoints($size) {
+    @if $size == phablet {
+       @media(max-width: map-get($breakpoints , $size )){
+           @content;
+       }
+    }
+    @media(min-width: map-get($breakpoints, $size )){
+        @content;
+    } 
+}
