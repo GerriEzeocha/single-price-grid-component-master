@@ -242,9 +242,9 @@ body {
   .ctaSub {
     padding-left: 29px;
     border-bottom-left-radius: 6px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
